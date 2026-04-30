@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SENAI | Monitor de Fadiga</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <p style="text-align: left; margin: 0; color: #ff0000; font-weight: bold;">[ SYSTEM ACTIVE ]</p>
+        <h1>ALERTA DE SONO</h1>
+        <p>Unidade de Segurança do Trabalho - SENAI</p>
+
+        <div class="video-wrapper">
+            <img src="{{ url_for('video') }}" class="video">
+        </div>
+
+        <div class="status">
+            <div class="pulse"></div>
+            Processando Visão Computacional...
+        </div>
+    </div>
+</body>
+</html>
